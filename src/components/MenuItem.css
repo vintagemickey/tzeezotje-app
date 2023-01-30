@@ -1,0 +1,32 @@
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #E7E7E7;
+    padding: 25px 0;
+}
+
+.menu-item-date {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.menu-dishes {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item-first-dish, .menu-item-last-dish {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+
+.menu-item-first-dish::after {
+    content: '• • •';
+    color: #D3B47F;
+    margin: 0 10px;
+}

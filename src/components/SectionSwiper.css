@@ -1,0 +1,60 @@
+.swiper-slides {
+    background-color: #3A4574;
+    padding: 220px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper img, .swiper h6 {
+    margin-bottom: 40px;
+}
+
+.swiper h6 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    color: #D3B47F;
+}
+
+.swiper p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 55px;
+    white-space: pre;
+}
+
+.swiper span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.245em;
+    color: #D3B47F;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #D3B47F;
+}
+
+@media screen and (max-width: 960px) {
+    .swiper-slides {
+        padding: 100px 0;
+    }
+
+    .swiper p {
+        padding: 0 50px;
+        white-space: normal;
+    }
+}

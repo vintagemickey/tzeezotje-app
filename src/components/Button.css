@@ -1,0 +1,29 @@
+.btn--primary {
+    width: 270px;
+    height: 100px;
+    background: #3A4574;
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.btn--social {
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    border-radius: 100%;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.btn--large {
+    width: 270px;
+    height: 100px;
+}
+
+.btn--small {
+    width: 48px;
+    height: 48px;
+}

@@ -1,0 +1,130 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 12%;
+}
+
+.navbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    padding-top: 55px;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar-item {
+    padding-right: 45px;
+}
+
+.navbar-items li:last-child {
+    padding-right: 0px;
+}
+
+.navbar-item a, .navbar-phone-number {
+    font-family: 'Poppins';
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbar-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-phone img {
+    padding-right: 12px;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: relative;
+    }
+  
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 85vh;
+      position: absolute;
+      right: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      padding: 50px 20px
+    }
+  
+    .navbar-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .navbar.active {
+      right: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+      background-color: #FFFFFF;
+      top: 0;
+    }
+  
+    .navbar-item {
+        text-align: left;
+        padding: 2rem 2rem 1rem 0;
+        display: table;
+        margin: 0;
+        border-bottom: 1px solid #D3B47F;
+    }
+    .navbar-item a {
+        color: #D3B47F;
+    }
+
+    .navbar-item a:hover {
+      color: #3A4574;
+    }
+  
+    .navbar-item:hover {
+      border-radius: 0;
+      transition: 250ms;
+    }
+    .navbar-items li:last-child {
+        padding-right: 2rem; 
+    }
+
+    .navbar-icon {
+        z-index: 999;
+    }
+  
+    .navbar-icon > .fa-bars {
+        font-size: 32px;
+        color: #FFFFFF;
+    }
+    .navbar-icon > .fa-xmark {
+        font-size: 40px;
+        color: #D3B47F;
+    }
+
+    .navbar-items {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .navbar-phone-number {
+        color: #D3B47F;
+    }
+}
